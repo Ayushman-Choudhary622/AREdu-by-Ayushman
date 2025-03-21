@@ -2,20 +2,25 @@
 <html>
 <head>
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 </head>
 <body style="margin: 0;">
     <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
         <!-- ===== CHEMISTRY ===== -->
-        <a-marker type="barcode" value="1"><a-entity gltf-model="./assets/models/chemistry/hydrogen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="1"><a-entity gltf-model="./Assets/models/Chemistry/hydrogen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="2"><a-entity gltf-model="./Assets/models/Chemistry/hydrogen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="3"><a-entity gltf-model="./Assets/models/Chemistry/hydrogen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="4"><a-entity gltf-model="./Assets/models/Chemistry/hydrogen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="5"><a-entity gltf-model="./Assets/models/Chemistry/hydrogen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="6"><a-entity gltf-model="./Assets/models/Chemistry/hydrogen.glb"></a-entity></a-marker>
         <!-- Add markers 2-6 similarly -->
-        <a-marker type="barcode" value="7"><a-entity gltf-model="./assets/models/chemistry/oxygen.glb"></a-entity></a-marker>
-        <a-marker type="barcode" value="8"><a-entity gltf-model="./assets/models/chemistry/carbon.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="7"><a-entity gltf-model="./Assets/models/Chemistry/oxygen.glb"></a-entity></a-marker>
+        <a-marker type="barcode" value="8"><a-entity gltf-model="./Assets/models/Chemistry/carbon.glb"></a-entity></a-marker>
 
         <!-- ===== HISTORY ===== -->
         <a-marker type="barcode" value="9">
-            <a-entity gltf-model="./assets/models/history/statue1.glb" scale="0.5 0.5 0.5">
-                <a-text value="Julius Caesar\nRoman Emperor" 
+            <a-entity gltf-model="./Assets/models/History/statue1.glb" scale="0.5 0.5 0.5">
+                <a-text value="Egyptian Statue" 
                         position="0 1 0" 
                         color="black"
                         align="center"
@@ -23,10 +28,9 @@
                 </a-text>
             </a-entity>
         </a-marker>
-
-        <a-marker type="barcode" value="10">
-            <a-entity gltf-model="./assets/models/history/statue2.glb" scale="0.5 0.5 0.5">
-                <a-text value="Cleopatra\nEgyptian Queen" 
+         <a-marker type="barcode" value="10">
+            <a-entity gltf-model="./Assets/models/History/statue2.glb" scale="0.5 0.5 0.5">
+                <a-text value="Statue of Liberty" 
                         position="0 1 0" 
                         color="black"
                         align="center"
@@ -34,10 +38,9 @@
                 </a-text>
             </a-entity>
         </a-marker>
-
-        <a-marker type="barcode" value="11">
-            <a-entity gltf-model="./assets/models/history/statue3.glb" scale="0.5 0.5 0.5">
-                <a-text value="Alexander the Great\nMacedonian King" 
+         <a-marker type="barcode" value="11">
+            <a-entity gltf-model="./Assets/models/History/statue3.glb" scale="0.5 0.5 0.5">
+                <a-text value="Roman Statue" 
                         position="0 1 0" 
                         color="black"
                         align="center"
@@ -48,40 +51,37 @@
 
         <!-- ===== BIOLOGY ===== -->
         <a-marker type="barcode" value="12">
-            <a-entity gltf-model="./assets/models/biology/tree.glb" scale="1 1 1">
-                <a-text value="Oak Tree (Quercus)" 
+            <a-entity gltf-model="./Assets/models/Biology/tree.glb" scale="1 1 1">
+                <a-text value="Tree" 
                         position="0 3 0" 
                         color="green"
                         align="center">
                 </a-text>
             </a-entity>
         </a-marker>
-        
         <a-marker type="barcode" value="13">
-            <a-entity gltf-model="./assets/models/biology/flower.glb" scale="0.3 0.3 0.3">
-                <a-text value="Sunflower (Helianthus)" 
-                        position="0 0.5 0" 
+            <a-entity gltf-model="./Assets/models/Biology/flower.glb" scale="1 1 1">
+                <a-text value="Sunflower" 
+                        position="0 3 0" 
                         color="yellow"
                         align="center">
                 </a-text>
             </a-entity>
         </a-marker>
-
         <a-marker type="barcode" value="14">
-            <a-entity gltf-model="./assets/models/biology/dna.glb" scale="0.5 0.5 0.5">
-                <a-text value="DNA Structure" 
-                        position="0 2 0" 
+            <a-entity gltf-model="./Assets/models/Biology/dna.glb" scale="1 1 1">
+                <a-text value="DNA" 
+                        position="0 3 0" 
                         color="blue"
                         align="center">
                 </a-text>
             </a-entity>
         </a-marker>
-
         <a-marker type="barcode" value="15">
-            <a-entity gltf-model="./assets/models/biology/cell.glb" scale="0.5 0.5 0.5">
+            <a-entity gltf-model="./Assets/models/Biology/cell.glb" scale="1 1 1">
                 <a-text value="Animal Cell" 
-                        position="0 2 0" 
-                        color="red"
+                        position="0 3 0" 
+                        color="black"
                         align="center">
                 </a-text>
             </a-entity>
@@ -90,14 +90,14 @@
         <!-- ===== CHEMICAL REACTIONS ===== -->
         <!-- Water Reaction -->
         <a-entity id="h2o-reaction" visible="false">
-            <a-entity id="h2o-molecule" gltf-model="./assets/models/chemistry/h2o_molecule.glb" scale="0.5 0.5 0.5"></a-entity>
-            <a-entity id="water-sphere" gltf-model="./assets/models/chemistry/water_sphere.glb" scale="0 0 0"></a-entity>
+            <a-entity id="h2o-molecule" gltf-model="./Assets/models/Chemistry/h2o_molecule.glb" scale="0.5 0.5 0.5"></a-entity>
+            <a-entity id="water-sphere" gltf-model="./Assets/models/Chemistry/water_sphere.glb" scale="0 0 0"></a-entity>
         </a-entity>
 
         <!-- Methane Reaction -->
         <a-entity id="ch4-reaction" visible="false">
-            <a-entity id="ch4-molecule" gltf-model="./assets/models/chemistry/ch4_molecule.glb" scale="0.5 0.5 0.5"></a-entity>
-            <a-entity id="methane-sphere" gltf-model="./assets/models/chemistry/methane_sphere.glb" scale="0 0 0"></a-entity>
+            <a-entity id="ch4-molecule" gltf-model="./Assets/models/Chemistry/ch4_molecule.glb" scale="0.5 0.5 0.5"></a-entity>
+            <a-entity id="methane-sphere" gltf-model="./Assets/models/Chemistry/methane_sphere.glb" scale="0 0 0"></a-entity>
         </a-entity>
 
         <!-- ===== CAMERA ===== -->
@@ -124,7 +124,7 @@
         // Proximity Check (0.5 meters)
         function checkProximity(reactionType) {
             const markers = reactionType.elements.map(type => 
-                Array.from(document.querySelectorAll(`[gltf-model="./assets/models/chemistry/${type}.glb"]`))
+                Array.from(document.querySelectorAll(`[gltf-model="./Assets/models/Chemistry/${type}.glb"]`))
                     .find(el => el.getAttribute('visible'));
             
             if(markers.every(m => m)) {
